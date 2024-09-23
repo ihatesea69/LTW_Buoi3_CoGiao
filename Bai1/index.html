@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phiếu Tham Gia CLB Tin Học LUBU</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form id="registrationForm">
+        <h2>PHIẾU THAM GIA CLB TIN HỌC <span style="color:blue">LUBU</span></h2>
+
+        <label>Mã sinh viên:</label>
+        <input type="text" id="studentID" placeholder="Nhập Mã SV">
+        <span class="error" id="studentIDError"></span><br><br>
+
+        <label>Họ và tên:</label>
+        <input type="text" id="fullName" placeholder="Nhập Họ và tên">
+        <span class="error" id="fullNameError"></span><br><br>
+
+        <label>Tuổi:</label>
+        <input type="number" id="age" placeholder="Nhập tuổi > 18">
+        <span class="error" id="ageError"></span><br><br>
+
+        <label>Ngoại ngữ:</label>
+        <input type="checkbox" id="english" value="Anh"> Anh
+        <input type="checkbox" id="french" value="Pháp"> Pháp
+        <input type="checkbox" id="japanese" value="Nhật"> Nhật
+        <span class="error" id="languageError"></span><br><br>
+
+        <label>Chuyên ngành:</label>
+        <select id="major">
+            <option value="Hệ thống">Hệ thống</option>
+            <option value="Phần mềm">Phần mềm</option>
+            <option value="Mạng máy tính">Mạng máy tính</option>
+        </select>
+        <span class="error" id="majorError"></span><br><br>
+
+        <label>Sở trường:</label>
+        <input type="text" id="skill" readonly><br><br>
+
+        <button type="button" onclick="validateForm()">Đăng ký</button>
+        <p id="result"></p>
+    </form>
+</body>
+</html>
